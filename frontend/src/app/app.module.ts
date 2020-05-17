@@ -7,11 +7,13 @@ import { UpperMainMenuComponent } from './upper-main-menu/upper-main-menu.compon
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { SlideshowComponent } from './slideshow/slideshow.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    UpperMainMenuComponent
+    UpperMainMenuComponent,
+    SlideshowComponent
   ],
   imports: [
     BrowserModule,
