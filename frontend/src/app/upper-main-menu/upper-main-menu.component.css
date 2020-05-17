@@ -1,6 +1,9 @@
-#menu {
-  background: white;
-  padding: 2px;
+.navbar {
+  justify-content: space-between;
+}
+
+span {
+  padding-right: 1rem;
 }
 
 #title {
@@ -13,29 +16,17 @@
   font-size: 16px;
   padding-left: 10px;
 }
+
 #title span {
   background: -webkit-linear-gradient(white, #38495a);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333333;
-}
-
-li {
-  float: right;
-}
-
-li a {
-  display: block;
+span a {
   color: white;
   text-align: center;
-  padding: 16px;
+  padding: 12px;
   text-decoration: none;
   font-family: "lato", sans-serif;
   font-weight: 300;
@@ -43,6 +34,6 @@ li a {
   letter-spacing: 10px;
 }
 
-li a:hover {
+span a:hover {
   background-color: #111111;
 }
