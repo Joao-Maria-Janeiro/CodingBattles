@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 import { Observable, of } from 'rxjs';
-import { catchError, map, tap, first } from 'rxjs/operators';
+import { catchError, map, tap, first, flatMap } from 'rxjs/operators';
 
 import {baseUrl} from '../constants';
 
@@ -13,8 +13,12 @@ export class UserService {
 
   constructor(private http: HttpClient) { }
 
-  signup(username: string, password: string, email: string, favourite_language: string, ocupation: string, company: string, languages: [string], first_name: string, last_name: string): Observable<string> {
-    return this.http.post<string>(baseUrl, JSON.stringify({
+  getAllLanguages() : Observable<string[]> {
+    return this.http.get<string[]>(baseUrl + "/users/languages");
+  }
+
+  signup(username: string, password: string, email: string, favourite_language: string, ocupation: string, company: string, languages: string[], first_name: string, last_name: string): Observable<string> {
+    return this.http.post<string>(baseUrl + "/users/signup", JSON.stringify({
       "username": username,
       "password": password,
       "email": email,

@@ -5,6 +5,7 @@ from django.contrib.auth.models import User
 from django.contrib.auth import authenticate
 from django.http import HttpResponse, JsonResponse
 from .models import Language
+from .serializers import LanguageSerializer
 
 # Helper methods
 def user_exists(email):
@@ -56,3 +57,8 @@ def signup(request):
     except:
         return JsonResponse({'error': 'The user was created but you language preferences weren\'t saved. Please update them in the profile'})
     return JsonResponse({'error': ''})
+
+def get_all_coding_languages(request):
+    languages = Language.objects.all()
+    serializer = LanguageSerializer(languages, many=True)
+    return JsonResponse(serializer.data, safe=False)

@@ -1,9 +1,30 @@
 <div class="wrap">
   <h2>Sign up Here</h2>
   <form>
-    <input type="text" placeholder="Name..." required>
+    <input type="text" placeholder="Username..." required>
     <input type="email" placeholder="Email..." required>
     <input type="password" placeholder="Password..." required>
+    <input type="text" placeholder="First name..." required>
+    <input type="text" placeholder="Last name..." required>
+    <input type="text" placeholder="Company/School..." required>
+    <input type="text" placeholder="Position..." required>
+
+    <mat-form-field>
+      <mat-label style="color: aliceblue;">Favorite coding language</mat-label>
+      <mat-select [(value)] = "user.favourite_language">
+        <mat-option *ngFor="let language of languages" [value]="language">
+          {{language}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label style="color: aliceblue;">Your coding languages</mat-label>
+      <mat-select [(value)] = "user.languages" multiple>
+        <mat-option *ngFor="let language of languages" [value]="language">{{language}}</mat-option>
+      </mat-select>
+    </mat-form-field>
+
     <input type="submit" value="Signup">
   </form>
 </div>
