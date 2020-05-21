@@ -8,12 +8,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { SlideshowComponent } from './slideshow/slideshow.component';
+import { SignupComponent } from './users/signup/signup.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     UpperMainMenuComponent,
-    SlideshowComponent
+    SlideshowComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,

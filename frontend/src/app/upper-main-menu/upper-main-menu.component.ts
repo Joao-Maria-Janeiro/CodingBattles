@@ -7,8 +7,7 @@ import {Component, OnInit, ViewChild} from '@angular/core';
 })
 export class UpperMainMenuComponent implements OnInit {
 
-  constructor() {
-  }
+  constructor() {}
 
   ngOnInit(): void {
   }
