@@ -16,6 +16,13 @@ import { SignupComponent } from './users/signup/signup.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelectModule } from '@angular/material/select';
 
+import {MatButtonModule} from '@angular/material/button';
+
+import { FormsModule }   from '@angular/forms';
+
+import { CommonModule } from '@angular/common';
+
+
 
 @NgModule({
   declarations: [
@@ -31,6 +38,9 @@ import { MatSelectModule } from '@angular/material/select';
     HttpClientModule,
     MatFormFieldModule,
     MatSelectModule,
+    MatButtonModule,
+    FormsModule,
+    CommonModule,
     MatToolbarModule
   ],
   providers: [],

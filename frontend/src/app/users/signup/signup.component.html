@@ -1,30 +1,40 @@
-<div class="wrap">
-  <h2>Sign up Here</h2>
-  <form>
-    <input type="text" placeholder="Username..." required>
-    <input type="email" placeholder="Email..." required>
-    <input type="password" placeholder="Password..." required>
-    <input type="text" placeholder="First name..." required>
-    <input type="text" placeholder="Last name..." required>
-    <input type="text" placeholder="Company/School..." required>
-    <input type="text" placeholder="Position..." required>
+<div *ngIf="successfulSignup == false">
+  <div class="wrap">
+    <h2>Sign up Here</h2>
+    <form ngNativeValidate #signupform="ngForm" (ngSubmit)="submitUserData(signupform)" >
+      <input matInput class="form-control" type="text" placeholder="Username..." required [(ngModel)]="user.username" name="username">
+      <input matInput class="form-control" type="email" placeholder="Email..." required [(ngModel)]="user.email" name="email">
+      <input matInput class="form-control" type="password" placeholder="Password..." required [(ngModel)]="user.password" name="password">
+      <input matInput class="form-control" type="password" placeholder="Retype your password..." required [(ngModel)]="password2" name="password2">
+      <input matInput class="form-control" type="text" placeholder="First name..." required [(ngModel)]="user.first_name" name="first name">
+      <input matInput class="form-control" type="text" placeholder="Last name..." required [(ngModel)]="user.last_name" name="last name">
+      <input matInput class="form-control" type="text" placeholder="Company/School..." required [(ngModel)]="user.company" name="company">
+      <input matInput class="form-control" type="text" placeholder="Ocupation..." required [(ngModel)]="user.ocupation" name="ocupation">
+  
+      <mat-form-field>
+        <mat-label style="color: aliceblue;">Favorite coding language</mat-label>
+        <mat-select required class="form-control" [(ngModel)] = "user.favourite_language" name="fav">
+          <mat-option *ngFor="let language of languages" [value]="language">
+            {{language}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+  
+      <mat-form-field>
+        <mat-label style="color: aliceblue;">Your coding languages</mat-label>
+        <mat-select required class="form-control" [(ngModel)] = "user.languages" multiple name="languages">
+          <mat-option *ngFor="let language of languages" [value]="language">{{language}}</mat-option>
+        </mat-select>
+      </mat-form-field>
+      
+      <br>
+      <button mat-raised-button type="submit" value="signup" color="primary">Signup</button>
+      <br>
+      <p style="color: blue;"> {{error}} </p>
+    </form>
+  </div>
+</div>
 
-    <mat-form-field>
-      <mat-label style="color: aliceblue;">Favorite coding language</mat-label>
-      <mat-select [(value)] = "user.favourite_language">
-        <mat-option *ngFor="let language of languages" [value]="language">
-          {{language}}
-        </mat-option>
-      </mat-select>
-    </mat-form-field>
-
-    <mat-form-field>
-      <mat-label style="color: aliceblue;">Your coding languages</mat-label>
-      <mat-select [(value)] = "user.languages" multiple>
-        <mat-option *ngFor="let language of languages" [value]="language">{{language}}</mat-option>
-      </mat-select>
-    </mat-form-field>
-
-    <input type="submit" value="Signup">
-  </form>
+<div *ngIf="successfulSignup == true">
+  <h2 style="color: aliceblue;">Your profile was sucessfully created!</h2>
 </div>
