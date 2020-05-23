@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { User } from '../model/user';
 import { UserService } from '../user.service';
-import {FormControl} from '@angular/forms';
+import {NgForm} from '@angular/forms';
 
 
 @Component({
@@ -22,7 +22,9 @@ export class SignupComponent implements OnInit {
     last_name: ""
   };
   languages : string[] = [];
-  languagesControl = new FormControl();
+  password2 : string = "";
+  error : string;
+  successfulSignup: boolean = false;
 
   constructor(private userService: UserService) { }
 
@@ -32,7 +34,21 @@ export class SignupComponent implements OnInit {
         this.languages.push(language['name'])
       });
     });
-    console.log(this.languages);
+  }
+
+  submitUserData(f: NgForm) : void {
+    if((this.user.favourite_language.length != 0) && (this.user.languages.length != 0)) {
+      if(this.user.password != this.password2) {
+        this.error = "Passwords must match";
+      } else {
+        this.userService.signup(this.user).subscribe(signup_error => {
+          if(signup_error['error'] == '') {
+            this.successfulSignup = true;
+          } 
+          this.error = signup_error['error'];
+        });
+      }
+    }
   }
 
 }

@@ -5,6 +5,7 @@ import { Observable, of } from 'rxjs';
 import { catchError, map, tap, first, flatMap } from 'rxjs/operators';
 
 import {baseUrl} from '../constants';
+import { User } from './model/user';
 
 @Injectable({
   providedIn: 'root'
@@ -17,17 +18,17 @@ export class UserService {
     return this.http.get<string[]>(baseUrl + "/users/languages");
   }
 
-  signup(username: string, password: string, email: string, favourite_language: string, ocupation: string, company: string, languages: string[], first_name: string, last_name: string): Observable<string> {
+  signup(user: User): Observable<string> {
     return this.http.post<string>(baseUrl + "/users/signup", JSON.stringify({
-      "username": username,
-      "password": password,
-      "email": email,
-      "favourite_language": favourite_language,
-      "ocupation": ocupation,
-      "company": company,
-      "languages": languages,
-      "first_name": first_name,
-      "last_name": last_name
+      "username": user.username,
+      "password": user.password,
+      "email": user.email,
+      "favourite_language": user.favourite_language,
+      "ocupation": user.ocupation,
+      "company": user.company,
+      "languages": user.languages,
+      "first_name": user.first_name,
+      "last_name": user.last_name
     })).pipe(
       catchError(this.handleError<string>('signup'))
     );
