@@ -1,16 +1,40 @@
 <div *ngIf="successfulSignup == false">
-  <div class="wrap">
+  <div class="login-box">
     <h2>Sign up Here</h2>
     <form ngNativeValidate #signupform="ngForm" (ngSubmit)="submitUserData(signupform)" >
-      <input matInput class="form-control" type="text" placeholder="Username..." required [(ngModel)]="user.username" name="username">
-      <input matInput class="form-control" type="email" placeholder="Email..." required [(ngModel)]="user.email" name="email">
-      <input matInput class="form-control" type="password" placeholder="Password..." required [(ngModel)]="user.password" name="password">
-      <input matInput class="form-control" type="password" placeholder="Retype your password..." required [(ngModel)]="password2" name="password2">
-      <input matInput class="form-control" type="text" placeholder="First name..." required [(ngModel)]="user.first_name" name="first name">
-      <input matInput class="form-control" type="text" placeholder="Last name..." required [(ngModel)]="user.last_name" name="last name">
-      <input matInput class="form-control" type="text" placeholder="Company/School..." required [(ngModel)]="user.company" name="company">
-      <input matInput class="form-control" type="text" placeholder="Ocupation..." required [(ngModel)]="user.ocupation" name="ocupation">
-  
+      <div class="textbox">
+        <i class="fas fa-user"></i>
+        <input matInput class="form-control" type="text" placeholder="Username..." required [(ngModel)]="user.username" name="username">
+      </div>
+      <div class="textbox">
+        <i class="far fa-envelope-open"></i>
+        <input matInput class="form-control" type="email" placeholder="Email..." required [(ngModel)]="user.email" name="email">
+      </div>
+      <div class="textbox">
+        <i class="fas fa-lock"></i>
+        <input matInput class="form-control" type="password" placeholder="Password..." required [(ngModel)]="user.password" name="password">
+      </div>
+      <div class="textbox">
+        <i class="fas fa-lock"></i>
+        <input matInput class="form-control" type="password" placeholder="Retype your password..." required [(ngModel)]="password2" name="password2">
+      </div>
+      <div class="textbox">
+        <i class="fas fa-signature"></i>
+        <input matInput class="form-control" type="text" placeholder="First name..." required [(ngModel)]="user.first_name" name="first name">
+      </div>
+      <div class="textbox">
+        <i class="fas fa-signature"></i>
+        <input matInput class="form-control" type="text" placeholder="Last name..." required [(ngModel)]="user.last_name" name="last name">
+      </div>
+      <div class="textbox">
+        <i class="far fa-building"></i>
+        <input matInput class="form-control" type="text" placeholder="Company/School..." required [(ngModel)]="user.company" name="company">
+      </div>
+      <div class="textbox">
+        <i class="fas fa-briefcase"></i>
+        <input matInput class="form-control" type="text" placeholder="Ocupation..." required [(ngModel)]="user.ocupation" name="ocupation">
+      </div>
+
       <mat-form-field>
         <mat-label style="color: aliceblue;">Favorite coding language</mat-label>
         <mat-select required class="form-control" [(ngModel)] = "user.favourite_language" name="fav">
@@ -28,7 +52,7 @@
       </mat-form-field>
       
       <br>
-      <button mat-raised-button type="submit" value="signup" color="primary">Signup</button>
+      <button class="btn" mat-raised-button type="submit" value="signup" color="primary">Signup</button>
       <br>
       <p style="color: blue;"> {{error}} </p>
     </form>
