@@ -1,20 +1,41 @@
-<!--<div id="menu">
-  <ul>
-    <li><a href="#signIn">SignIn</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#events">Events</a></li>
-    <li><a href="#home">Home</a></li>
-    <li id="title"><a href="#home">Coding Battles</a></li>
-  </ul>
-</div> -->
-
-<mat-toolbar color="primary" class="navbar">
+<!-- <mat-toolbar color="primary" class="navbar">
   <span><a id="title" href="#home">Coding Battles</a></span>
-  <div>
+  <div fxLayout="row">
     <span><a href="#home">Home</a></span>
     <span><a href="#about">About</a></span>
     <span><a routerLink="/signup">SignIn</a></span>
   </div>
-</mat-toolbar>
+</mat-toolbar> -->
+
+
+<div> 
+  <mat-toolbar color="primary">
+    <div fxShow="true" fxHide.gt-sm="true">
+      <button mat-icon-button (click)="sidenav.toggle()">
+        <mat-icon>menu</mat-icon>
+      </button>
+    </div>
+
+    <a mat-button class="companyName" routerLink="/">
+      <span>Coding Battles</span>
+    </a>
+    <span class="example-spacer"></span>
+    <div fxShow="true" fxHide.lt-md="true">
+      <a mat-button href="#">About</a>
+      <a mat-button routerLink="/login">SignIn</a>
+    </div>
+
+  </mat-toolbar>
+
+  <!-- <mat-sidenav-container fxFlexFill> -->
+    <mat-sidenav color="primary" #sidenav fxLayout="column" mode="over"  opened="false" fxHide.gt-sm="true">
+      <div fxLayout="column">
+        <a mat-button href="#">About</a>
+        <a mat-button routerLink="/login">SignIn</a>
+      </div>
+    </mat-sidenav>
+  <!-- </mat-sidenav-container> -->
+</div>
+
 
 <router-outlet></router-outlet>

@@ -34,6 +34,15 @@ export class UserService {
     );
   }
 
+  login(email: string, password: string): Observable<string> {
+    return this.http.post<string>(baseUrl + "/users/login", JSON.stringify({
+      "password": password,
+      "email": email,
+    })).pipe(
+      catchError(this.handleError<string>('signup'))
+    );
+  }
+
   /**
  * Handle Http operation that failed.
  * Let the app continue.

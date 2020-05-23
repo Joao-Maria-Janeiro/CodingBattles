@@ -1,0 +1,26 @@
+<div class="container" 
+    fxLayout 
+    fxLayoutAlign="center" 
+    fxLayout="row"
+    fxLayout.xs="column"
+    fxLayoutGap="10px"
+    fxLayoutGap.xs="0">
+    <div fxFlex="50">
+        <h2 style="color: aliceblue;">I already have an account</h2>
+        <div fxLayout fxLayout="column">
+            <input matInput class="form-control" type="email" placeholder="Email..." required [(ngModel)]="email" name="email">
+            <input matInput class="form-control" type="password" placeholder="Password..." required [(ngModel)]="password" name="password">
+            <button class="btn" mat-raised-button color="primary" (click)="login()">Login</button>
+            <p style="color: red;"> {{ error }} </p>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    
+    <div class="container" fxFlex="50">
+        <h2 style="color: aliceblue;">I don't have an account</h2>
+        <button class="btn" mat-raised-button color="primary"><a routerLink="/signup">Create an account</a></button>
+    </div>
+  </div>

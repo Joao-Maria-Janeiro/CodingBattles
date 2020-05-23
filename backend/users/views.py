@@ -29,7 +29,7 @@ def login(request):
         authenticated = authenticate(username=user.username, password=password)
         if authenticated is not None:
             token = Token.objects.get_or_create(user=user)
-            return JsonResponse({"token": token[0].key,"username": user.username})
+            return JsonResponse({"token": token[0].key,"username": user.username, "error": ""})
         else:
             return JsonResponse({"error":"The user doesn't exist or the username and password don't match"})
     else:

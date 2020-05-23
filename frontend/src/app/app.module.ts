@@ -8,7 +8,7 @@ import { AppComponent } from './app.component';
 import { UpperMainMenuComponent } from './upper-main-menu/upper-main-menu.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatToolbarModule, } from '@angular/material/toolbar';
 import { SlideshowComponent } from './slideshow/slideshow.component';
 import { SignupComponent } from './users/signup/signup.component';
 
@@ -17,11 +17,15 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelectModule } from '@angular/material/select';
 
 import {MatButtonModule} from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+import { MatSidenavModule } from '@angular/material/sidenav';
 
 import { FormsModule }   from '@angular/forms';
 
 import { CommonModule } from '@angular/common';
+import { LoginComponent } from './users/login/login.component';
 
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 
 @NgModule({
@@ -29,7 +33,8 @@ import { CommonModule } from '@angular/common';
     AppComponent,
     UpperMainMenuComponent,
     SlideshowComponent,
-    SignupComponent
+    SignupComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -41,6 +46,9 @@ import { CommonModule } from '@angular/common';
     MatButtonModule,
     FormsModule,
     CommonModule,
+    FlexLayoutModule,
+    MatSidenavModule,
+    MatIconModule,
     MatToolbarModule
   ],
   providers: [],
