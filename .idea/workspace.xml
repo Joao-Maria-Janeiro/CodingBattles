@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="361a7756-4bda-4e60-bd3f-42cd67120970" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/backend/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/backend/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/upper-main-menu/upper-main-menu.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/upper-main-menu/upper-main-menu.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/upper-main-menu/upper-main-menu.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/upper-main-menu/upper-main-menu.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/upper-main-menu/upper-main-menu.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/upper-main-menu/upper-main-menu.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/users/login/login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/users/login/login.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/app/users/signup/signup.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/users/signup/signup.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/users/user.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/users/user.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/users/signup/signup.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/users/signup/signup.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styles.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,10 +17,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/src/app/users/signup/signup.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
+            <state relative-caret-position="133">
               <caret line="48" column="22" selection-start-line="48" selection-start-column="22" selection-end-line="48" selection-end-column="22" />
             </state>
           </provider>
@@ -34,8 +29,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/src/app/users/signup/signup.component.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="334">
-              <caret line="60" column="1" lean-forward="true" selection-start-line="60" selection-start-column="1" selection-end-line="60" selection-end-column="1" />
+            <state relative-caret-position="189">
+              <caret line="68" selection-start-line="68" selection-end-line="68" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/frontend/src/styles.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="98">
+              <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -58,9 +62,9 @@
         <option value="$PROJECT_DIR$/frontend/src/app/upper-main-menu/upper-main-menu.component.ts" />
         <option value="$PROJECT_DIR$/frontend/src/app/users/login/login.component.ts" />
         <option value="$PROJECT_DIR$/frontend/src/app/upper-main-menu/upper-main-menu.component.html" />
-        <option value="$PROJECT_DIR$/frontend/src/styles.css" />
-        <option value="$PROJECT_DIR$/frontend/src/app/users/signup/signup.component.css" />
         <option value="$PROJECT_DIR$/frontend/src/app/users/signup/signup.component.html" />
+        <option value="$PROJECT_DIR$/frontend/src/app/users/signup/signup.component.css" />
+        <option value="$PROJECT_DIR$/frontend/src/styles.css" />
       </list>
     </option>
   </component>
@@ -180,13 +184,12 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24089000" />
+    <option name="totallyTimeSpent" value="24330000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2322239" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2322239" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -200,7 +203,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.14893617" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.42880523" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
@@ -430,13 +433,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/app/upper-main-menu/upper-main-menu.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -457,17 +453,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/users/signup/signup.component.css">
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/users/signup/signup.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="60" column="1" lean-forward="true" selection-start-line="60" selection-start-column="1" selection-end-line="60" selection-end-column="1" />
+        <state relative-caret-position="133">
+          <caret line="48" column="22" selection-start-line="48" selection-start-column="22" selection-end-line="48" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/users/signup/signup.component.html">
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/users/signup/signup.component.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="48" column="22" selection-start-line="48" selection-start-column="22" selection-end-line="48" selection-end-column="22" />
+        <state relative-caret-position="189">
+          <caret line="68" selection-start-line="68" selection-end-line="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="98">
+          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
         </state>
       </provider>
     </entry>
