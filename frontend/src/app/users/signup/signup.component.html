@@ -1,7 +1,6 @@
 <div *ngIf="successfulSignup == false">
-  <div class="login-box">
-    <h2>Sign up Here</h2>
-    <form ngNativeValidate #signupform="ngForm" (ngSubmit)="submitUserData(signupform)" >
+    <form class="box" ngNativeValidate #signupform="ngForm" (ngSubmit)="submitUserData(signupform)" >
+      <h2>Sign up Here</h2>
       <div class="textbox">
         <i class="fas fa-user"></i>
         <input matInput class="form-control" type="text" placeholder="Username..." required [(ngModel)]="user.username" name="username">
@@ -57,7 +56,6 @@
       <p style="color: blue;"> {{error}} </p>
     </form>
   </div>
-</div>
 
 <div *ngIf="successfulSignup == true">
   <h2 style="color: aliceblue;">Your profile was sucessfully created!</h2>
