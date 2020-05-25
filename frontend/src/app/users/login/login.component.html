@@ -17,7 +17,7 @@
             <i class="fas fa-lock"></i>
             <input matInput class="form-control" type="password" placeholder="Password..." required [(ngModel)]="password" name="password">
           </div>
-          <button class="btn" type="submit" mat-raised-button color="primary" (click)="login()">Login</button>
+          <input value="Login" class="btn" type="submit" (click)="login()" >
           <a id="notAccount" routerLink="/signup">Don't Have an Account?</a>
           <p style="color: red;"> {{ error }} </p>
         </div>

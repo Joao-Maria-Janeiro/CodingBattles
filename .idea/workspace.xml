@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="361a7756-4bda-4e60-bd3f-42cd67120970" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/backend/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/users/login/login.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/users/login/login.component.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/app/users/login/login.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/users/login/login.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/app/users/signup/signup.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/users/signup/signup.component.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/app/users/signup/signup.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/users/signup/signup.component.html" afterDir="false" />
@@ -21,19 +19,28 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/app/users/login/login.component.css">
+        <entry file="file://$PROJECT_DIR$/frontend/src/app/users/signup/signup.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+            <state relative-caret-position="364">
+              <caret line="53" column="103" selection-start-line="53" selection-start-column="103" selection-end-line="53" selection-end-column="103" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/frontend/src/app/users/signup/signup.component.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="292">
+              <caret line="54" column="17" selection-start-line="54" selection-start-column="17" selection-end-line="54" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/src/app/users/login/login.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+            <state relative-caret-position="266">
+              <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
               <folding>
                 <element signature="n#style#0;n#p#0;n#div#0;n#form#0;n#div#0;n#div#0;n#!!top" expanded="true" />
               </folding>
@@ -52,10 +59,10 @@
         <option value="$PROJECT_DIR$/frontend/src/app/app-routing.module.ts" />
         <option value="$PROJECT_DIR$/frontend/src/app/app.component.html" />
         <option value="$PROJECT_DIR$/frontend/src/styles.css" />
-        <option value="$PROJECT_DIR$/frontend/src/app/users/signup/signup.component.html" />
-        <option value="$PROJECT_DIR$/frontend/src/app/users/signup/signup.component.css" />
-        <option value="$PROJECT_DIR$/frontend/src/app/users/login/login.component.css" />
         <option value="$PROJECT_DIR$/frontend/src/app/users/login/login.component.html" />
+        <option value="$PROJECT_DIR$/frontend/src/app/users/signup/signup.component.html" />
+        <option value="$PROJECT_DIR$/frontend/src/app/users/login/login.component.css" />
+        <option value="$PROJECT_DIR$/frontend/src/app/users/signup/signup.component.css" />
       </list>
     </option>
   </component>
@@ -196,7 +203,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11097000" />
+    <option name="totallyTimeSpent" value="11819000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="676" y="0" width="697" height="735" extended-state="0" />
@@ -216,7 +223,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.19435216" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.18438539" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
@@ -384,37 +391,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/users/signup/signup.component.css">
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/users/login/login.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="40" column="22" lean-forward="true" selection-start-line="40" selection-start-column="22" selection-end-line="40" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/users/signup/signup.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="53" column="44" selection-start-line="53" selection-start-column="44" selection-end-line="53" selection-end-column="57" />
+        <state relative-caret-position="266">
+          <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
           <folding>
-            <element signature="n#style#0;n#p#0;n#form#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#0;n#form#0;n#div#0;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/app/users/login/login.component.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+        <state relative-caret-position="255">
+          <caret line="50" column="17" selection-start-line="50" selection-start-column="17" selection-end-line="51" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/users/login/login.component.html">
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/users/signup/signup.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
-          <folding>
-            <element signature="n#style#0;n#p#0;n#div#0;n#form#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="364">
+          <caret line="53" column="103" selection-start-line="53" selection-start-column="103" selection-end-line="53" selection-end-column="103" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/users/signup/signup.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="54" column="17" selection-start-line="54" selection-start-column="17" selection-end-line="54" selection-end-column="17" />
         </state>
       </provider>
     </entry>
