@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import { UserService } from '../user.service';
+import { ShareData } from "../../shareData";
 
 @Component({
   selector: 'app-login',
@@ -10,9 +11,15 @@ export class LoginComponent implements OnInit {
   email : string = "";
   password : string = "";
   error : string = "";
-  constructor(private userService : UserService) { }
+  username : string;
+
+  constructor(
+    private userService : UserService,
+    private shareService : ShareData,
+    ) { }
 
   ngOnInit(): void {
+    this.shareService.currentUsername.subscribe(username => this.username = username)
   }
 
   login() : void {
@@ -33,6 +40,8 @@ export class LoginComponent implements OnInit {
             window.localStorage['user_token'] = result['token'];
             window.localStorage['username'] = result['username'];
             //TODO: redirect to main or previous component
+            this.shareService.changeUsername(result['username']);
+            console.log("login" + result['username'] + "  " + this.username);
           }
         }); 
     }

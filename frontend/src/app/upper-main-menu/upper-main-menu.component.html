@@ -1,15 +1,6 @@
-<!-- <mat-toolbar color="primary" class="navbar">
-  <span><a id="title" href="#home">Coding Battles</a></span>
-  <div fxLayout="row">
-    <span><a href="#home">Home</a></span>
-    <span><a href="#about">About</a></span>
-    <span><a routerLink="/signup">SignIn</a></span>
-  </div>
-</mat-toolbar> -->
 
-
-<div> 
-  <mat-toolbar color="primary">
+<div>
+  <mat-toolbar style="background: #00555a" color="primary">
     <div fxShow="true" fxHide.gt-sm="true">
       <button mat-icon-button (click)="sidenav.toggle()">
         <mat-icon>menu</mat-icon>
@@ -23,6 +14,7 @@
     <div fxShow="true" fxHide.lt-md="true">
       <a mat-button href="#">About</a>
       <a mat-button routerLink="/login">SignIn</a>
+      <a mat-button>{{username}}</a>
     </div>
 
   </mat-toolbar>
@@ -35,6 +27,7 @@
       </div>
     </mat-sidenav>
   <!-- </mat-sidenav-container> -->
+
 </div>
 
 

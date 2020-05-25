@@ -1,4 +1,7 @@
-import {Component, OnInit, ViewChild} from '@angular/core';
+import {Component, OnDestroy, OnInit, ViewChild} from '@angular/core';
+import { Subject } from "rxjs";
+import { share } from 'rxjs/operators';
+import { ShareData } from "../shareData";
 
 @Component({
   selector: 'app-upper-main-menu',
@@ -7,9 +10,16 @@ import {Component, OnInit, ViewChild} from '@angular/core';
 })
 export class UpperMainMenuComponent implements OnInit {
 
-  constructor() {}
+  username:string;
 
-  ngOnInit(): void {
+  constructor(
+    private sharedService: ShareData
+  ) {
+
+  }
+
+  ngOnInit() {
+  this.sharedService.currentUsername.subscribe(username => this.username = username)
   }
 
 }
