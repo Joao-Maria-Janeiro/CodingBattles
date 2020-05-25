@@ -5,6 +5,7 @@ html {
   background: #333333;
   overflow: scroll;
   overflow-x: hidden;
+  overflow-y: inherit;
 }
 
 html, body { height: 100%; }
