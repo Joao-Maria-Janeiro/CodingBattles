@@ -4,7 +4,7 @@
   width: 340px;
   padding: 25px;
   position: absolute;
-  top: 85%;
+  top: 65%;
   left: 50%;
   transform: translate(-50%,-50%);
   background: #191919;
@@ -63,3 +63,7 @@
   background: #2ecc71;
 }
 
+/* TODO: Wanted to change the color of the selction but ddin't work */
+.mat-select-value {
+  color: aliceblue !important;
+}
