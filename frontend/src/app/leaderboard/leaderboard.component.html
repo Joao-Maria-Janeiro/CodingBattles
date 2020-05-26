@@ -1,1 +1,14 @@
-<p>leaderboard works!</p>
+
+<div class="leaderboard">
+<mat-grid-list id="leaderboardTitle" cols="3" rowHeight="50px">
+  <mat-grid-tile>Username</mat-grid-tile>
+  <mat-grid-tile>Country</mat-grid-tile>
+  <mat-grid-tile>Score</mat-grid-tile>
+</mat-grid-list>
+
+<mat-grid-list *ngFor="let player of players" cols="3" rowHeight="50px">
+  <mat-grid-tile>{{player.username}}</mat-grid-tile>
+  <mat-grid-tile>{{player.country}}</mat-grid-tile>
+  <mat-grid-tile>{{player.score}}</mat-grid-tile>
+</mat-grid-list>
+</div>

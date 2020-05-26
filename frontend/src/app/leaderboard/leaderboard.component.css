@@ -1,0 +1,18 @@
+mat-grid-tile {
+  background: lightblue;
+}
+
+mat-grid-list {
+  margin: 2px;
+}
+
+#leaderboardTitle mat-grid-tile{
+  background: #00555a;
+  color: white;
+  font-size: 18px;
+}
+
+.leaderboard {
+  margin: 60px;
+  position: center;
+}
