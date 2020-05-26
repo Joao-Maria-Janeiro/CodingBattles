@@ -1,8 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
-/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files
+ Previous color: #333333*/
 html {
   height: 100%;
-  background: #333333;
+  background: white;
   overflow: scroll;
   overflow-x: hidden;
   overflow-y: inherit;

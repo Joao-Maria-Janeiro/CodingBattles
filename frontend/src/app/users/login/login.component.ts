@@ -41,6 +41,7 @@ export class LoginComponent implements OnInit {
             window.localStorage['username'] = result['username'];
             //TODO: redirect to main or previous component
             this.shareService.changeUsername(result['username']);
+            this.shareService.changeUserLogin(true);
             console.log("login" + result['username'] + "  " + this.username);
           }
         }); 

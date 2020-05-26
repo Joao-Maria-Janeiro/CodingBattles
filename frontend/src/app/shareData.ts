@@ -5,6 +5,8 @@ import { BehaviorSubject } from "rxjs";
   providedIn: 'root'
 })
 export class ShareData {
+  private isLoggedIn = new BehaviorSubject<boolean>(false);
+  currentLog = this.isLoggedIn.asObservable();
 
   private usernameSource = new BehaviorSubject<string>("");
   currentUsername = this.usernameSource.asObservable();
@@ -13,6 +15,10 @@ export class ShareData {
 
   changeUsername(username: string) {
     this.usernameSource.next(username);
+  }
+
+  changeUserLogin(isloggedin: boolean) {
+    this.isLoggedIn.next(isloggedin);
   }
 
 }

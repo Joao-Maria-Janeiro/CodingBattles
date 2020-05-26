@@ -10,7 +10,8 @@ import { ShareData } from "../shareData";
 })
 export class UpperMainMenuComponent implements OnInit {
 
-  username:string;
+  username : string;
+  islogged : boolean;
 
   constructor(
     private sharedService: ShareData
@@ -19,7 +20,13 @@ export class UpperMainMenuComponent implements OnInit {
   }
 
   ngOnInit() {
-  this.sharedService.currentUsername.subscribe(username => this.username = username)
+  this.sharedService.currentUsername.subscribe(username => this.username = username);
+    this.sharedService.currentLog.subscribe(isLoggedIn => this.islogged = isLoggedIn);
   }
+
+  /*isLogged() : boolean {
+    this.sharedService.currentLog.subscribe(isLoggedIn => this.islogged = isLoggedIn);
+    return this.islogged;
+  }*/
 
 }

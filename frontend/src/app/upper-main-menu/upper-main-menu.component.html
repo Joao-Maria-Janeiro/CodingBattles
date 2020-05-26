@@ -15,6 +15,7 @@
       <a mat-button href="#">About</a>
       <a mat-button routerLink="/login">SignIn</a>
       <a mat-button>{{username}}</a>
+      <a mat-button routerLink="/leaderboard" *ngIf="islogged == true">Leaderboard</a>
     </div>
 
   </mat-toolbar>
@@ -24,6 +25,8 @@
       <div fxLayout="column">
         <a mat-button href="#">About</a>
         <a mat-button routerLink="/login">SignIn</a>
+        <a mat-button>{{username}}</a>
+        <a mat-button routerLink="/login" *ngIf="islogged == true">Leaderboard</a>
       </div>
     </mat-sidenav>
   <!-- </mat-sidenav-container> -->

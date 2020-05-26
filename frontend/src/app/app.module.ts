@@ -26,6 +26,7 @@ import { CommonModule } from '@angular/common';
 import { LoginComponent } from './users/login/login.component';
 
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { LeaderboardComponent } from './leaderboard/leaderboard.component';
 
 
 @NgModule({
@@ -34,7 +35,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     UpperMainMenuComponent,
     SlideshowComponent,
     SignupComponent,
-    LoginComponent
+    LoginComponent,
+    LeaderboardComponent
   ],
   imports: [
     BrowserModule,
