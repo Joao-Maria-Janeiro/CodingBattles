@@ -13,7 +13,7 @@
     <span class="example-spacer"></span>
     <div fxShow="true" fxHide.lt-md="true">
       <a mat-button href="#">About</a>
-      <a mat-button routerLink="/login">SignIn</a>
+      <a *ngIf="!islogged" mat-button routerLink="/login">SignIn</a>
       <a mat-button>{{username}}</a>
       <a mat-button routerLink="/leaderboard" *ngIf="islogged == true">Leaderboard</a>
     </div>
@@ -24,7 +24,7 @@
     <mat-sidenav color="primary" #sidenav fxLayout="column" mode="over"  opened="false" fxHide.gt-sm="true">
       <div fxLayout="column">
         <a mat-button href="#">About</a>
-        <a mat-button routerLink="/login">SignIn</a>
+        <a *ngIf="!islogged" mat-button routerLink="/login">SignIn</a>
         <a mat-button>{{username}}</a>
         <a mat-button routerLink="/login" *ngIf="islogged == true">Leaderboard</a>
       </div>
